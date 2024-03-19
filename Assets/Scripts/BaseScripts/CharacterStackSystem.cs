@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CharacterStackSystem : MonoBehaviour
 {
@@ -117,6 +118,8 @@ public class CharacterStackSystem : MonoBehaviour
                 dropableFinalObject.transform.parent = trashPoint;
                 dropableFinalObject.transform.localRotation = Quaternion.Euler(Vector3.zero);
                 dropableFinalObject.DestroyObject();
+                
+                MoneyManager.Instance.EarnMoney(Random.Range(2,10));
             }));
             
             yAxis -= .5f;

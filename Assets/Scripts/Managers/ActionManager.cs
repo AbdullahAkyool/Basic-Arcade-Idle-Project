@@ -11,5 +11,5 @@ public class ActionManager : MonoBehaviour
         Instance = this;
     }
 
-    public Action OnRawObjectAddedToList;
+    public Action<float> onMoneyAmountChanged;
 }

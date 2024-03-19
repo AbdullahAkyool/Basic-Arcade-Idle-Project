@@ -1,18 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   [SerializeField] private TMP_Text moneyCount;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   private void Start()
+   {
+      ActionManager.Instance.onMoneyAmountChanged += SetMoneyCount;
+   }
+
+   private void OnDisable()
+   {
+      ActionManager.Instance.onMoneyAmountChanged -= SetMoneyCount;
+   }
+
+   private void SetMoneyCount(float moneyAmount)
+   {
+      moneyCount.text = moneyAmount.ToString();
+   }
 }
