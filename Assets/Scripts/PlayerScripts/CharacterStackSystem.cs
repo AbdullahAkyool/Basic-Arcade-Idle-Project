@@ -8,8 +8,8 @@ public class CharacterStackSystem : MonoBehaviour
 {
     [SerializeField] private Transform stackPoint;
     [SerializeField] private Transform trashPoint;
-    [SerializeField] private int characterStackLimit;
-    [SerializeField] private List<StackObjectBase> stackedRawObjects;
+    public int characterStackLimit;
+    public List<StackObjectBase> stackedRawObjects;
     [SerializeField] private List<StackObjectBase> stackedFinalObjects;
 
     private bool isTakingObject;
@@ -118,6 +118,9 @@ public class CharacterStackSystem : MonoBehaviour
                 dropableFinalObject.transform.localRotation = Quaternion.Euler(Vector3.zero);
                 dropableFinalObject.DestroyObject();
             }));
+            
+            yAxis -= .5f;
+            if (yAxis < 0) yAxis = 0;
         }
 
         yield return new WaitForSeconds(.2f);
