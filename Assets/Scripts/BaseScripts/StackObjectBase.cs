@@ -8,6 +8,7 @@ public abstract class StackObjectBase : MonoBehaviour
 {
     public Vector3 jumpPosition;
     public MachineControllerBase machineControllerBase;
+    public string objectId;
     private void OnEnable()
     {
         Jump();

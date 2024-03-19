@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class MachineControllerBase : MonoBehaviour
 {
     [Header("----- Spawn -----")]
-    [SerializeField] private StackObjectBase spawnObjectPrefab;
+    public StackObjectBase spawnObjectPrefab;
     public List<StackObjectBase> spawnedObjects;
     public Transform spawnPoint;
     public int spawnLimit;

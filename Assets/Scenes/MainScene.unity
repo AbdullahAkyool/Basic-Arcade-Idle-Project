@@ -2007,8 +2007,7 @@ MonoBehaviour:
   stackPoint: {fileID: 651510347}
   trashPoint: {fileID: 1031548714}
   characterStackLimit: 0
-  stackedRawObjects: []
-  stackedFinalObjects: []
+  stackedObjects: []
 --- !u!95 &1576587659
 Animator:
   serializedVersion: 4
@@ -3145,6 +3144,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 330585545}
+    - target: {fileID: 3557754375969089277, guid: 72fac977b55e622428c832b2276fb59c,
+        type: 3}
+      propertyPath: rawObjectsStackLimit
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3557754375969089278, guid: 72fac977b55e622428c832b2276fb59c,
         type: 3}
       propertyPath: m_RootOrder
@@ -3970,6 +3974,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Helper
       objectReference: {fileID: 0}
+    - target: {fileID: 8514770820520422728, guid: 2acffb7d8b99a5546a483a377634cb5d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8514770820520422736, guid: 2acffb7d8b99a5546a483a377634cb5d,
         type: 3}
       propertyPath: spawnerMachine
@@ -4040,6 +4049,11 @@ PrefabInstance:
       propertyPath: trashPoint
       value: 
       objectReference: {fileID: 1031548714}
+    - target: {fileID: 8514770820520422743, guid: 2acffb7d8b99a5546a483a377634cb5d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2acffb7d8b99a5546a483a377634cb5d, type: 3}
 --- !u!1 &8582114225002058098

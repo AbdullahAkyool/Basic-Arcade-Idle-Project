@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class RawObject : StackObjectBase
 {
-    
+    private void Start()
+    {
+        objectId = "RawObject";
+    }
 }

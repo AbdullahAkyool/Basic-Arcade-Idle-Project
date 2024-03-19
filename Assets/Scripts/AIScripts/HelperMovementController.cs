@@ -32,12 +32,12 @@ public class HelperMovementController : CharacterMovementControllerBase
 
     private void ChangeTarget()
     {
-        if (stackSystem.stackedRawObjects.Count == stackSystem.characterStackLimit)
+        if (stackSystem.stackedObjects.Count == stackSystem.characterStackLimit)
         {
             currentTarget = transformerMachine;
         }
 
-        if (stackSystem.stackedRawObjects.Count == 0)
+        if (stackSystem.stackedObjects.Count == 0)
         {
             currentTarget = spawnerMachine;
         }
