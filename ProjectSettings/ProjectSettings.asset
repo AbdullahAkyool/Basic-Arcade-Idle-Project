@@ -881,11 +881,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 213d29a9-2235-4534-8ae4-58d900bb57bd
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Basic-Arcade-Idle-Project
+  organizationId: xuggin
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
